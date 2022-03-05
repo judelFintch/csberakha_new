@@ -1,5 +1,6 @@
 
-    <?php include('part/header.php') ?>
+@extends('layout.app')
+@section('content')
     <section
         class="relative h-40 z-10 bg-cover bg-no-repeat bg-right-bottom sm:bg-left-top md:bg-center flex items-center before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gray-800 before:opacity-70 before:z-10"
         style="background-image: url(assets/images/banner_header.png);">
@@ -15,8 +16,6 @@
     </section>
 
     <!-- gap-2 grid md:grid-cols-2 lg:grid-cols-3 overflow-x-hidden -->
-    <?php include('part/footer.php') ?>
-    <script src="assets/js/main.js"></script>
-</body>
 
-</html>
+   
+@endsection
