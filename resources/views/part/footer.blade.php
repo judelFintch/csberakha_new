@@ -84,7 +84,7 @@
                 <div class="w-full md:w-1/2 lg:w-1/3">
                     <ul class="flex flex-wrap justify-center md:justify-start">
                         <li class="px-3 py-2">
-                            <a href="index.php"
+                            <a href="/"
                                 class="text-gray-100 font-medium text-lg transition duration-300 hover:text-gray-200">Accueil</a>
                         </li>
                         <li class="px-3 py-2">
@@ -93,11 +93,11 @@
                                 propos</a>
                         </li>
                         <li class="px-3 py-2">
-                            <a href="communique.html"
+                            <a href="{{route('pages.actu')}}"
                                 class="text-gray-100 font-medium text-lg transition duration-300 hover:text-gray-200">Actualités</a>
                         </li>
                         <li class="px-3 py-2">
-                            <a href="galerie.html"
+                            <a href="{{route('pages.galery')}}"
                                 class="text-gray-100 font-medium text-lg transition duration-300 hover:text-gray-200">Galerie</a>
                         </li>
                     </ul>

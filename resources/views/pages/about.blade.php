@@ -41,7 +41,7 @@
                                 rendrai ton nom célèbre. Je bénirai les autres par toi. »
                             </p>
                             <div class="flex">
-                                <a href="options.html"
+                                <a href="{{route('pages.options')}}"
                                     class="block py-2 px-3 sm:py-3 sm:px-5 bg-primary text-gray-100 sm:font-medium rounded-lg text-sm sm:text-base">Options
                                     organisées</a>
                             </div>

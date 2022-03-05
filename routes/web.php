@@ -25,3 +25,6 @@ Route::get('/actualites', [MainController::class, 'actu'])->name('pages.actu');
 Route::get('/galery', [MainController::class, 'galery'])->name('pages.galery');
 Route::get('/under_construct', [MainController::class, 'underContstruct'])->name('pages.under');
 Route::get('/contact_us', [MainController::class, 'contact'])->name('pages.contact');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

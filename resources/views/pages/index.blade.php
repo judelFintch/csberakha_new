@@ -11,7 +11,7 @@
                     l'étude et la formation de votre enfant. La qualité, les meilleurs enseignants, les programmes
                     scolaires conçues sur-mesure, des salles de classes avec de fournitures modernes.
                 </p>
-                <a href="about.php" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Savoir
+                <a href="{{route('pages.about')}}" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Savoir
                     plus</a>
             </div>
         </div>
@@ -35,7 +35,7 @@
                     </p>
                 </div>
                 <div class="block">
-                    <a href="about.php" class="block px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Plus
+                    <a href="{{route('pages.about')}}" class="block px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Plus
                         sur nous</a>
                 </div>
             </div>
