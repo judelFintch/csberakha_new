@@ -1,6 +1,6 @@
 @extends('layout.app')
 @section('content')
-<section class="relative bg-no-repeat bg-center bg-cover h-[75vh] lg:h-[80vh] 2xl:h-[60vh] before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-opacity-70 before:bg-gray-800 before:z-20" style="background-image: url('https://csberakah.org/assets/images/berakahImg/1.jpg');">
+<section class="relative bg-no-repeat bg-center bg-cover h-[75vh] lg:h-[80vh] 2xl:h-[60vh] before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-opacity-70 before:bg-gray-800 before:z-20" style="background-image: url('https://csberakah.org/public/assets/images/berakahImg/1.jpg');">
     <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto h-full">
         <div class="h-full w-full flex items-center max-w-screen-xl">
             <div class="w-full flex flex-wrap flex-row justify-center space-y-5 lg:space-y-7 z-50">
