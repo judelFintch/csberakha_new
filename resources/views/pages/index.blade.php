@@ -164,7 +164,7 @@
                         </div>
                     </div>
                     <div class="flex">
-                        <a href="options.php" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-normal">Toutes
+                        <a href="{{route('pages.options')}}" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-normal">Toutes
                             les options</a>
                     </div>
                 </div>
@@ -311,7 +311,7 @@
 
         <div class="grid gap-6 md:grid-cols-3 md:gap-8">
           @foreach ($articles as $article)
-          <a href="">
+          <a href="{{route('pages.detail')}}">
             <div class="col-span-1 opacity-0 scale-x-50 scale-y-50 item-blog flex flex-row flex-wrap group transition duration-700 bg-white rounded-md shadow-md p-4">
                 <div class="relative w-full overflow-hidden h-60 max-h-60 sm:h-40 sm:max-h-40 2xl:h-60 2xl:max-h-72 rounded-md mb-3">
                     <img src="{{asset('assets/images/berakahImg/berakah_bus.jpg')}}" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">

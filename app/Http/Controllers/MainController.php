@@ -37,6 +37,12 @@ class MainController extends Controller
         $articles=DB::table('actu_models')->get();
         return view('pages.actu',['articles'=>$articles]);
     }
+    public function detail(){
+        $articles=DB::table('actu_models')->get();
+        return view('pages.details',['articles'=>$articles]);
+    }
+
+    
 
     
     public function contact(){
