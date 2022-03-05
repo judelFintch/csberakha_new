@@ -3,13 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MainController extends Controller
 {
     //
 
     public function index(){
-        return view('pages.index');
+        $articles=DB::table('actu_models')->get();
+        return view('pages.index',['articles'=>$articles]);
     }
 
 
@@ -32,7 +34,8 @@ class MainController extends Controller
         return view('pages.options');
     }
     public function actu(){
-        return view('pages.actu');
+        $articles=DB::table('actu_models')->get();
+        return view('pages.actu',['articles'=>$articles]);
     }
 
     
