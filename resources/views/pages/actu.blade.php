@@ -20,9 +20,8 @@
         <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto">
             <h3 class="text-base text-prinary font-medium md:text-center animatedText">- Les nouvelles de nous</h3>
             <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 md:text-center">Nos <span
-                    class="text-prinary">Actualités(Travaux encours)</span></h1>
+                    class="text-prinary">Actualités</span></h1>
             <div class="w-full grid md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 left-to-right">
-
             @foreach ($articles as $article)
                 <div
                     class="item-blog col-span-1 opacity-0 scale-x-50 scale-y-50 item-blog flex flex-row flex-wrap group transition duration-700 bg-white rounded-md shadow-md p-4">

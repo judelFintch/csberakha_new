@@ -5,7 +5,7 @@
         <div class="h-full w-full flex items-center max-w-screen-xl">
             <div class="w-full flex flex-wrap flex-row justify-center space-y-5 lg:space-y-7 z-50">
                 <h1 class="text-white text-3xl md:text-4xl lg:text-5xl lg:leading-snug text-center font-bold">
-                    Bienvenue au Complexe Scolaire Berakah(Travaux encours sur le site).</h1>
+                    Bienvenue au Complexe Scolaire Berakah.</h1>
                 <p class="text-center block text-white text-lg">
                     Une école d'excellence pour
                     l'étude et la formation de votre enfant. La qualité, les meilleurs enseignants, les programmes
