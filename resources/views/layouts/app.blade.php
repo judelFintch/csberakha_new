@@ -85,6 +85,11 @@
                     <a href="{{route('pages.options')}}"
                         class="relative transition-all before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:transform before:scale-0 lg:hover:before:scale-100 before:transition hover:before:transition hover:before:duration-300 before:bg-primary duration-300 hover:text-primary block md:flex py-3">Options</a>
                 </li>
+
+                <li class="relative">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScjrkZQ3RaojYiCUN5m5LSDrprD9motavd8TiyM3_jgDUrpQg/viewform?usp=pp_url"
+                        class="relative transition-all before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:transform before:scale-0 lg:hover:before:scale-100 before:transition hover:before:transition hover:before:duration-300 before:bg-primary duration-300 hover:text-primary block md:flex py-3">Inscription</a>
+                </li>
                 <li class="relative">
                     <a href="{{route('pages.actu')}}"
                         class="relative transition-all before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:transform before:scale-0 lg:hover:before:scale-100 before:transition hover:before:transition hover:before:duration-300 before:bg-primary duration-300 hover:text-primary block md:flex py-3">Actualités</a>
