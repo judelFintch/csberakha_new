@@ -21,7 +21,7 @@ class HomeFrontendController extends Controller
 
     public function index(): Factory|View|Application
     {
-        return view('frontend.home', [
+        return view('frontend.index', [
             'articles' => $this->repository->getAllVerified(),
             'valves' => $this->valveRepository->getAllVerified(),
             'galleries' => $this->galleryRepository->getAllVerified()
@@ -50,20 +50,14 @@ class HomeFrontendController extends Controller
         ]);
     }
 
-    public function bloc_un()
+    public function options()
     {
-        return view('frontend.bloc_un', [
+        return view('frontend.options', [
             'article' => 1
         ]);
     }
 
-    public function bloc_deux()
-    {
-        return view('frontend.bloc_deux', [
-            'article' => 1
-        ]);
-    }
-
+ 
     public function visionnaire()
     {
         return view('frontend.visionnaire', [
@@ -73,7 +67,7 @@ class HomeFrontendController extends Controller
 
     public function gallery():Factory|View|Application
     {
-        return view('frontend.gallery', [
+        return view('frontend.galery', [
             'articles' => $this->repository->getAllVerified(),
             'galleries' => $this->galleryRepository->getAllVerified(),
             'valves' => $this->valveRepository->getAllVerified()
@@ -83,7 +77,7 @@ class HomeFrontendController extends Controller
 
     public function actu():Factory|View|Application
     {
-        return view('frontend.actualites', [
+        return view('frontend.actu', [
             'articles' => $this->repository->getAllVerified(),
             'valves' => $this->valveRepository->getAllVerified(),
             
@@ -100,9 +94,9 @@ class HomeFrontendController extends Controller
     }
 
 
-    public function under()
+    public function underContstruct()
     {
-        return view('frontend.underconstruct', [
+        return view('frontend.under', [
             'article' => 1
         ]);
     }

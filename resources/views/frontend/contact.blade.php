@@ -1,95 +1,82 @@
-@extends('layouts.app')
-
-@section('title')
-    ACCEUIL
-@endsection
+@extends('layout.app')
 @section('content')
-<main id="main">
-
-<!-- ======= Breadcrumbs ======= -->
-<section id="breadcrumbs" class="breadcrumbs">
-  <div class="container">
-
-    <ol>
-      <li><a href="index.html">Home</a></li>
-      <li>Contact</li>
-    </ol>
-    <h2>Contact</h2>
-
-  </div>
-</section><!-- End Breadcrumbs -->
-
-<!-- ======= Contact Section ======= -->
-<section id="contact" class="contact">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="info-box mb-4">
-          <i class="bx bx-map"></i>
-          <h3>Our Address</h3>
-          <p>3539 Av Kalombo  et   165 de l'avenue Kasangulu coin de l’Eglise <br>
-          Gambela 2,Lubumbashi <br>
-          Republique Democratique du Congo<br></p>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="info-box  mb-4">
-          <i class="bx bx-envelope"></i>
-          <h3>Email Us</h3>
-          <p>info@csnsangalethanzie.org</p>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6">
-        <div class="info-box  mb-4">
-          <i class="bx bx-phone-call"></i>
-          <h3>Telephone</h3>
-          <p>+1 646 806 34 73</p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row">
-
-      <div class="col-lg-6 ">
-        <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
-      </div>
-
-      <div class="col-lg-6">
-        <form action="" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+    <section class="py-10 w-full overflow-hidden">
+        <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto overflow-x-hidden flex justify-center">
+            <div class="w-full md:container mx-auto p-2 xsm:p-3 md:p-10 overflow-hidden relative transition-all duration-300">
+                <div
+                    class="relative overflow-hidden mx-auto w-full grid lg:grid-cols-2 md:w-4/5 max-w-[820px] bg-white shadow-card-sh rounded-md">
+                    <div class="col-span-1 p-4 relative overflow-hidden">
+                        
+                        <div class="flex flex-col h-full space-y-5 relative">
+                            <h1 class="text-base font-bold z-20 text-primary">Nos Adresses</h1>
+                            <div class="flex flex-col flex-wrap z-20">
+                                <div class="flex flex-wrap space-y-3">
+                                    <div class="flex items-center w-full space-x-2">
+                                        <div class="w-10 flex-0">
+                                            
+                                        </div>
+                                        <div class="text-sm text-gray-700 font-normal"><span>Adresse physique</span></div>
+                                    </div>
+                                    <div class="flex items-center w-full space-x-2">
+                                        <div class="w-10 flex-0">
+                                            
+                                        </div>
+                                        <div class="text-sm text-gray-700 font-normal"><span>
+                                            info@csberakah.org
+                                        </span></div>
+                                    </div>
+                                    <div class="flex items-center w-full space-x-2">
+                                        <div class="w-10 flex-0">
+                                            
+                                        </div>
+                                        <div class="text-sm text-gray-700 font-normal"><span>
+                                            +243 974 275 000
+                                            +243 808 606 282
+                                            +243 823 293 323
+                                            +243 904 497 664
+                                        </span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-span-1 bg-primary rounded-b-md lg:rounded-b-none lg:rounded-r-md p-4 relative shadow-lg">
+                        <div class="w-full">
+                            <form action="" class="w-full bg-transparent">
+                                <div class="flex w-full flex-wrap pb-5 bg-transparent">
+                                    <h1 class="text-xl font-bold text-gray-50 z-30">Laissez nous un message</h1>
+                                </div>
+                                <div class="flex w-full flex-wrap pb-4 bg-transparent">
+                                    <label class="pb-2 text-gray-100 z-20">Nom</label>
+                                    <input type="text"
+                                        class="z-20 bg-transparent outline-none text-gray-50 w-full rounded-md px-4 py-2 border border-gray-300 text-sm font-normal placeholder:text-gray-400 placeholder:font-light transition-all duration-300">
+                                </div>
+                                <div class="flex w-full flex-wrap pb-4 bg-transparent">
+                                    <label class="z-20 pb-2 text-gray-100">Adresse mail</label>
+                                    <input type="email"
+                                        class="z-20 bg-transparent outline-none text-gray-50 w-full rounded-md px-4 py-2 border border-gray-300 text-sm font-normal placeholder:text-gray-400 placeholder:font-light transition-all duration-300">
+                                </div>
+                                <div class="flex w-full flex-wrap pb-4 bg-transparent">
+                                    <label class="z-20 pb-2 text-gray-100">Objet</label>
+                                    <input type="text"
+                                        class="z-20 bg-transparent outline-none text-gray-50 w-full rounded-md px-4 py-2 border border-gray-300 text-sm font-normal placeholder:text-gray-400 placeholder:font-light transition-all duration-300">
+                                </div>
+                                <div class="flex w-full flex-wrap pb-4 bg-transparent">
+                                    <label class="z-20 pb-2 text-gray-100">Message</label>
+                                    <textarea name=""
+                                        class="z-20 bg-transparent outline-none text-gray-50 w-full rounded-md px-4 py-2 border border-gray-300 text-sm font-normal placeholder:text-gray-400 placeholder:font-light transition-all duration-300"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit"
+                                        class="z-20 text-center px-6 py-2 rounded-md text-primary bg-gray-50 transition-all duration-300 hover:bg-blue-700 hover:text-gray-50">Envoyer</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-            </div>
-          </div>
-          <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-          </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Contact Section -->
-
-</main><!-- End #main -->
-
-
-  
+        </div>
+    </section>
+    <!-- gap-2 grid md:grid-cols-2 lg:grid-cols-3 overflow-x-hidden -->
 @endsection

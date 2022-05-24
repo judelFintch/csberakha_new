@@ -31,29 +31,15 @@ Route::group(['middleware' => 'auth'], function (){
 });
 
 
-
 Route::get('/', [HomeFrontendController::class, 'index'])->name('home.index');
-Route::get('/about', [HomeFrontendController::class, 'about'])->name('home.about');
-Route::get('/bloc_un', [HomeFrontendController::class, 'bloc_un'])->name('front.bloc_un');
-Route::get('/bloc_deux', [HomeFrontendController::class, 'bloc_deux'])->name('front.bloc_deux');
-Route::get('/visionnaire', [HomeFrontendController::class, 'visionnaire'])->name('front.visionnaire');
-
-//organisation route
-Route::get('/oganisation_maternelle', [OrganizationFrontendController::class, 'sectionMat'])->name('front.maternelle');
-Route::get('/organisation_primaire', [OrganizationFrontendController::class, 'sectionPri'])->name('front.primaire');
-Route::get('/organisation_secondaire', [OrganizationFrontendController::class, 'sectionSec'])->name('front.secondaire');
-
-//gallery route
-Route::get('/gallery', [HomeFrontendController::class, 'gallery'])->name('front.gallery');
-Route::get('/actualite', [HomeFrontendController::class, 'actu'])->name('front.actualite');
-Route::get('/contac', [HomeFrontendController::class, 'contact'])->name('front.contact');
-
-
-
-Route::get('/nos-article/{key}', [HomeFrontendController::class, 'show'])->name('article.voirplus');
+route::get('/nos-article/{key}', [HomeFrontendController::class, 'show'])->name('article.voirplus');
 Route::get('/all_articles', [HomeFrontendController::class, 'all_articles'])->name('article.all');
-Route::get('/section', [App\Http\Controllers\MainController::class, 'section'])->name('section');
-Route::get('/about_us', [App\Http\Controllers\MainController::class, 'section'])->name('about_us');
-Route::get('/job', [App\Http\Controllers\MainController::class, 'inscription'])->name('job');
-Route::get('/underconstruct', [HomeFrontendController::class, 'under'])->name('underconstruct');
-Route::get('/inscription', [App\Http\Controllers\MainController::class, 'inscription'])->name('inscription');
+Route::get('/about_us', [HomeFrontendController::class, 'about'])->name('pages.about');
+Route::get('/admission', [HomeFrontendController::class, 'admission'])->name('pages.admission');
+Route::get('/innovations', [HomeFrontendController::class, 'innovations'])->name('pages.inovations');
+Route::get('/options', [HomeFrontendController::class, 'options'])->name('pages.options');
+Route::get('/actualites', [HomeFrontendController::class, 'actu'])->name('pages.actu');
+Route::get('/galery', [HomeFrontendController::class, 'gallery'])->name('pages.galery');
+Route::get('/under_construct', [HomeFrontendController::class, 'underContstruct'])->name('pages.under');
+Route::get('/contact_us', [HomeFrontendController::class, 'contact'])->name('pages.contact');
+Route::get('/details/{id}', [MainController::class, 'detail'])->name('pages.detail');

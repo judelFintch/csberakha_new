@@ -1,262 +1,98 @@
-/**
-* Template Name: Eterna - v4.7.1
-* Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
+let buttonMenu = document.querySelector('#toogleNav')
+let overlayM = document.querySelector('#overlayMenu')
+let navM = document.querySelector('#navBar')
+let lstS = document.querySelector('#mItem_sub')
+let subM = document.querySelector('.submenu')
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
+
+buttonMenu.addEventListener('click', (e) => {
+    e.preventDefault()
+    toggleBtnMenu()
+    overlayM.classList.toggle('opacity-100')
+    overlayM.classList.toggle('scale-x-100')
+    //navM.classList.toggle('left-0')
+    if (navM.classList.contains('-left-full')) {
+        navM.classList.remove('-left-full')
+        navM.classList.add('left-0')
+    }
+    else {
+        navM.classList.remove('left-0')
+        navM.classList.add('-left-full')
+    }
+})
+
+overlayM.addEventListener('click', (e) => {
+    e.preventDefault()
+    buttonMenu.querySelector('#bar-1').classList.remove('rotate-45', 'absolute')
+    buttonMenu.querySelector('#bar-2').classList.remove('-rotate-45', 'absolute')
+    buttonMenu.querySelector('#bar-2').classList.add('mt-1.5')
+    buttonMenu.querySelector('#bar-3').classList.remove('opacity-0')
+    overlayM.classList.remove('opacity-100')
+    overlayM.classList.remove('scale-x-100')
+    navM.classList.remove('left-0')
+    navM.classList.add('-left-full')
+})
+document.querySelector('#openSubMenu').addEventListener('click', (e) => {
+    e.preventDefault()
+    let angl = lstS.querySelector('#angl_subm')
+    angl.classList.toggle('rotate-180')
+    if (window.innerWidth <= 1023) {
+        if (subM.style.height >= subM.scrollWidth + "px") {
+            subM.style.padding = "0px"
+            subM.style.height = "0px"
+        }
+        else {
+            subM.style.padding = "9px 0px 9px 20px"
+            subM.style.height = subM.scrollHeight + "px"
+
+        }
+    }
+})
+
+
+window.addEventListener('load', (e) => {
+    e.preventDefault()
+    ScrollReveal('.item-blog', 'activesc')
+    ScrollReveal('.fromLeft', 'activesec')
+    ScrollReveal('.fromRight', 'activesec')
+    ScrollReveal('.fromTop', 'activeY')
+    ScrollReveal('.fromBottom', 'activeY')
+})
+
+window.addEventListener('scroll', (e) => {
+    e.preventDefault()
+    ScrollReveal('.item-blog', 'activesc')
+    ScrollReveal('.fromLeft', 'activesec')
+    ScrollReveal('.fromRight', 'activesec')
+    ScrollReveal('.fromTop', 'activeY')
+    ScrollReveal('.fromBottom', 'activeY')
+})
+
+let toggleBtnMenu = () => {
+    toggleClass(buttonMenu.querySelector('#bar-1'), ['rotate-45', 'absolute'])
+    toggleClass(buttonMenu.querySelector('#bar-2'), ['-rotate-45', 'absolute', 'mt-1.5'])
+    toggleClass(buttonMenu.querySelector('#bar-3'), ['opacity-0'])
+}
+
+const toggleClass = (el, cls) => {
+    if (Array.isArray(cls)) {
+        cls.map((cl) => {
+            el.classList.toggle(cl);
+        });
     } else {
-      return document.querySelector(el)
+        el.classList.toggle(cls);
     }
-  }
-
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
-    }
-  }
-
-  /**
-   * Easy on scroll event listener 
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
-
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
-
-    if (!header.classList.contains('header-scrolled')) {
-      offset -= 16
-    }
-
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
+};
+function ScrollReveal(element, classApply) {
+    let el = document.querySelectorAll(`${element}`)
+    let windowH = window.innerHeight
+    let revealP = 0
+    el.forEach(element => {
+        var revealtop = element.getBoundingClientRect().top
+        if (revealtop < windowH - revealP)
+            element.classList.add(`${classApply}`)
+        /* else
+            element.classList.remove(`${classApply}`) */
     })
-  }
+}
 
-  /**
-   * Header fixed top on scroll
-   */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    let headerOffset = selectHeader.offsetTop
-    let nextElement = selectHeader.nextElementSibling
-    const headerFixed = () => {
-      if ((headerOffset - window.scrollY) <= 0) {
-        selectHeader.classList.add('fixed-top')
-        nextElement.classList.add('scrolled-offset')
-      } else {
-        selectHeader.classList.remove('fixed-top')
-        nextElement.classList.remove('scrolled-offset')
-      }
-    }
-    window.addEventListener('load', headerFixed)
-    onscroll(document, headerFixed)
-  }
-
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
-
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
-
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
-
-  /**
-   * Hero carousel indicators
-   */
-  let heroCarouselIndicators = select("#hero-carousel-indicators")
-  let heroCarouselItems = select('#heroCarousel .carousel-item', true)
-
-  heroCarouselItems.forEach((item, index) => {
-    (index === 0) ?
-    heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
-      heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
-  });
-
-  /**
-   * Clients Slider
-   */
-  new Swiper('.clients-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 60
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120
-      }
-    }
-  });
-
-  /**
-   * Skills animation
-   */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
-        });
-      }
-    })
-  }
-
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-      }, true);
-    }
-
-  });
-
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-})()
