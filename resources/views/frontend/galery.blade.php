@@ -6,7 +6,7 @@
                 <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 w-full max-h-80 md:max-h-[80vh] lg:max-h-[70vh] mb-2 py-2">
                     <div class="swiper-wrapper w-full h-full">
                         <div class="swiper-slide py-3 relative w-full h-full">
-                            <img src="/assets/images/berakahImg/4.jpg" class="w-full h-full rounded-lg object-cover z-10"/>
+                            <img src="{{asset('assets/images/berakahImg/4.jpg')}}" class="w-full h-full rounded-lg object-cover z-10"/>
                             <div class="absolute bg-blue-500 z-30 bottom-0 left-0 w-full p-4">
                                 Salle de pratique
                             </div>
@@ -40,13 +40,13 @@
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 w-full">
                 <div class="col-span-1 p-1 rounded-lg bg-gray-300 shadow-md overflow-hidden relative group transition-all duration-300">
-                    <img src="/assets/images/berakahImg/2.jpg" alt="image" class="w-full h-full object-cover group-hover:h-auto transition-all duration-300 rounded-lg">
+                    <img src="{{asset('assets/images/berakahImg/2.jpg')}}" alt="image" class="w-full h-full object-cover group-hover:h-auto transition-all duration-300 rounded-lg">
                     <div class="opacity-0 absolute bottom-2 w-11/12 left-[50%] translate-x-[-50%]  p-4 rounded-lg bg-black translate-y-4 bg-opacity-70 transition-all duration-300 group-hover:opacity-100 hover:translate-y-0">
                         <h1 class="text-lg font-bold text-gray-50">Salle de pratique</h1>
                     </div>
                 </div>
                 <div class="col-span-1 p-1 rounded-lg bg-gray-300 shadow-md overflow-hidden relative group transition-all duration-300">
-                    <img src="/assets/images/berakahImg/2.jpg" alt="image" class="w-full h-full object-cover group-hover:h-auto transition-all duration-300 rounded-lg">
+                    <img src="{{asset('assets/images/berakahImg/2.jpg')}}" alt="image" class="w-full h-full object-cover group-hover:h-auto transition-all duration-300 rounded-lg">
                     <div class="opacity-0 absolute bottom-2 w-11/12 left-[50%] translate-x-[-50%]  p-4 rounded-lg bg-black translate-y-4 bg-opacity-70 transition-all duration-300 group-hover:opacity-100 hover:translate-y-0">
                         <h1 class="text-lg font-bold text-gray-50">Salle de pratique</h1>
                     </div>
