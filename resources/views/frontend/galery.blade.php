@@ -36,7 +36,7 @@
     <section class="h-auto py-7 z-10 flex items-center w-full">
         <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto">
             <div class="">
-                <h1 class="text-lg font-semibold text-gray-800 mb-5">Travaux en cours</h1>
+                
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 w-full">
                 <div class="col-span-1 p-1 rounded-lg bg-gray-300 shadow-md overflow-hidden relative group transition-all duration-300">

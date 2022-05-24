@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
    
   
-    <title>@yield('title')</title>
+    <title>Complexe Scolaire BERAKAH</title>
         @yield('styles')
 </head>
 
