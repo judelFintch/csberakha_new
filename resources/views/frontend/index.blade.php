@@ -1,17 +1,19 @@
+
 @extends('layouts.app')
+
 @section('content')
-<section class="relative bg-no-repeat bg-center bg-cover h-[75vh] lg:h-[80vh] 2xl:h-[60vh] before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-opacity-70 before:bg-gray-800 before:z-20" style="background-image: url('https://csberakah.org/public/assets/images/berakahImg/1.jpg');">
+<section class="relative bg-no-repeat bg-center bg-cover h-[75vh] lg:h-[80vh] 2xl:h-[60vh] before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-opacity-70 before:bg-gray-800 before:z-20" style="background-image: url('https://csberakah.org/assets/images/berakahImg/1.jpg');">
     <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto h-full">
         <div class="h-full w-full flex items-center max-w-screen-xl">
             <div class="w-full flex flex-wrap flex-row justify-center space-y-5 lg:space-y-7 z-50">
                 <h1 class="text-white text-3xl md:text-4xl lg:text-5xl lg:leading-snug text-center font-bold">
-                    Bienvenue au Complexe Scolaire Berakah.</h1>
+                    Bienvenue au Complexe Scolaire Berakah(Travaux encours sur le site).</h1>
                 <p class="text-center block text-white text-lg">
                     Une école d'excellence pour
                     l'étude et la formation de votre enfant. La qualité, les meilleurs enseignants, les programmes
                     scolaires conçues sur-mesure, des salles de classes avec de fournitures modernes.
                 </p>
-                <a href="{{route('pages.about')}}" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Savoir
+                <a href="about.php" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Savoir
                     plus</a>
             </div>
         </div>
@@ -35,7 +37,7 @@
                     </p>
                 </div>
                 <div class="block">
-                    <a href="{{route('pages.about')}}" class="block px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Plus
+                    <a href="about.php" class="block px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Plus
                         sur nous</a>
                 </div>
             </div>
@@ -164,7 +166,7 @@
                         </div>
                     </div>
                     <div class="flex">
-                        <a href="{{route('pages.options')}}" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-normal">Toutes
+                        <a href="options.php" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-normal">Toutes
                             les options</a>
                     </div>
                 </div>
@@ -310,22 +312,48 @@
         <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Actualités <span class="text-primary">Recentes</span></h1>
 
         <div class="grid gap-6 md:grid-cols-3 md:gap-8">
-          @foreach ($articles as $article)
-          <a href="{{ route('article.voirplus', $article->key) }}">
             <div class="col-span-1 opacity-0 scale-x-50 scale-y-50 item-blog flex flex-row flex-wrap group transition duration-700 bg-white rounded-md shadow-md p-4">
                 <div class="relative w-full overflow-hidden h-60 max-h-60 sm:h-40 sm:max-h-40 2xl:h-60 2xl:max-h-72 rounded-md mb-3">
-                    <img src="{{ asset('storage/'.$article->picture) }}" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">
+                    <img src="assets/images/berakahImg/berakah_bus.jpg" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">
                     <div class="absolute bottom-0 left-0 px-5 py-2 bg-gray-900 bg-opacity-70 text-gray-800 rounded-bl-md">
-                        <span class="text-gray-50">{{$article->created_at}}</span>
+                        <span class="text-gray-50">12-12-2021</span>
                     </div>
                 </div>
                 <h1 class="font-medium text-lg w-full text-gray-800 mb-3 line-clamp-1 group-hover:cursor-default">
-                    {{$article->titre}}</h1>
+                    Travaux encours</h1>
                 <p class="line-clamp-3 text-base font-normal text-justify text-gray-500 mb-3 group-hover:cursor-default">
+
                 </p>
+
             </div>
-            </a>
-            @endforeach
+            <div class="col-span-1 opacity-0 scale-x-50 scale-y-50 item-blog flex flex-row flex-wrap group transition duration-700 bg-white rounded-md shadow-md p-4">
+                <div class="relative w-full overflow-hidden h-60 max-h-60 sm:h-40 sm:max-h-40 2xl:h-60 2xl:max-h-72 rounded-md mb-3">
+                    <img src="assets/images/berakahImg/cours_cs_berakah.JPG" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">
+                    <div class="absolute bottom-0 left-0 px-5 py-2 bg-gray-900 bg-opacity-70 text-gray-800 rounded-bl-md">
+                        <span class="text-gray-50">12-12-2021</span>
+                    </div>
+                </div>
+                <h1 class="font-medium text-lg w-full text-gray-800 mb-3 line-clamp-1 group-hover:cursor-default">
+                    Travaux en cours</h1>
+                <p class="line-clamp-3 text-base font-normal text-justify text-gray-500 mb-3 group-hover:cursor-default">
+
+                </p>
+
+            </div>
+            <div class="col-span-1 opacity-0 scale-x-50 scale-y-50 item-blog flex flex-row flex-wrap group transition duration-700 bg-white rounded-md shadow-md p-4">
+                <div class="relative w-full overflow-hidden h-60 max-h-60 sm:h-40 sm:max-h-40 2xl:h-60 2xl:max-h-72 rounded-md mb-3">
+                    <img src="assets/images/berakahImg/cours_berakah.jpg" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">
+                    <div class="absolute bottom-0 left-0 px-5 py-2 bg-gray-900 bg-opacity-70 text-gray-800 rounded-bl-md">
+                        <span class="text-gray-50">12-12-2021</span>
+                    </div>
+                </div>
+                <h1 class="font-medium text-lg w-full text-gray-800 mb-3 line-clamp-1 group-hover:cursor-default">
+                    Travaux en cours</h1>
+                <p class="line-clamp-3 text-base font-normal text-justify text-gray-500 mb-3 group-hover:cursor-default">
+
+                </p>
+
+            </div>
         </div>
     </div>
 </section>

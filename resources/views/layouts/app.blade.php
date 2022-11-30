@@ -1,22 +1,16 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-    <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS BERAKAH</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
-   
-  
-    <title>Complexe Scolaire BERAKAH</title>
-        @yield('styles')
+
 </head>
 
 <body class="min-h-screen bg-[#F1F5F9] font-Oxygen w-full overflow-x-hidden">
@@ -24,8 +18,8 @@
         <nav class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 lg:h-20 flex justify-between  sm:w-[85%] mx-auto h-16 items-center">
             
             <div class="flex w-full h-full justify-between items-center lg:w-auto">
-                <a href="/" class="flex space-x-2 items-center">
-                    <img src="{{asset('assets/images/favicon.png')}}" class="h-6 xsm:h-8 sm:h-10" alt="">
+                <a href="./" class="flex space-x-2 items-center">
+                    <img src="assets/images/favicon.png" class="h-6 xsm:h-8 sm:h-10" alt="">
                     <div class="flex flex-wrap">
                         <span class="w-full text-lg sm:text-xl font-bold text-gray-800">BERAKAH</span>
                         <span class="w-full text-xs font-normal text-primary">Complexe-scolaire</span>
@@ -45,7 +39,7 @@
             <div id="overlayMenu" class="opacity-0 overlay fixed top-0 z-[999] w-full h-screen bg-black bg-opacity-60 backdrop-filter blur-md transition-all duration-300 lg:hidden scale-x-0"></div>
             <ul id="navBar" class="fixed bg-white h-full top-0 -left-full w-full xsm:w-4/5 space-y-2 md:w-56 lg:h-auto lg:bg-transparent z-[1000] lg:left-0 lg:w-auto lg:relative lg:z-auto lg:flex lg:space-y-0 lg:space-x-4 text-lg pt-10 px-2 pb-2 xsm:p-4 lg:p-0 transition-all duration-300 lg:items-center">
                 <li class="relative">
-                    <a href="/"
+                    <a href="index.php"
                         class="relative transition-all before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:transform before:scale-0 lg:hover:before:scale-100 before:transition hover:before:transition hover:before:duration-300 before:bg-primary duration-300 hover:text-primary block md:flex py-3">Accueil</a>
                 </li>
                 <li id="mItem_sub" class="relative group">
@@ -62,17 +56,17 @@
                     </a>
                     <ul class="submenu relative h-0 w-full pl-5 py-0 pr-2 bg-transparent lg:absolute lg:top-full lg:w-52 lg:p-3 lg:rounded-lg lg:h-auto lg:shadow-lg transition-all duration-500 lg:bg-white lg:opacity-0 lg:translate-y-8 lg:group-hover:opacity-100 lg:group-hover:translate-y-0 overflow-hidden lg:border block">
                         <li class="block">
-                            <a href="{{route('pages.about')}}" class="text-gray-700 w-full transition duration-300 hover:text-primary text-lg" >
+                            <a href="about.php" class="text-gray-700 w-full transition duration-300 hover:text-primary text-lg" >
                                 A propos de nous
                             </a>
                         </li>
                         <li class="block">
-                            <a href="{{route('pages.under')}}" class="text-gray-700 w-full transition duration-300 hover:text-primary text-lg" >
+                            <a href="admission.php" class="text-gray-700 w-full transition duration-300 hover:text-primary text-lg" >
                                 Admission
                             </a>
                         </li>
                         <li class="block">
-                            <a href="{{route('pages.under')}}" class=" text-gray-700 w-full transition duration-300 hover:text-primary text-lg" >
+                            <a href="innovation.php" class=" text-gray-700 w-full transition duration-300 hover:text-primary text-lg" >
                                 Inovations
                             </a>
                         </li>
@@ -82,24 +76,19 @@
 
                 </li>
                 <li class="relative">
-                    <a href="{{route('pages.options')}}"
+                    <a href="options.php"
                         class="relative transition-all before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:transform before:scale-0 lg:hover:before:scale-100 before:transition hover:before:transition hover:before:duration-300 before:bg-primary duration-300 hover:text-primary block md:flex py-3">Options</a>
                 </li>
-
                 <li class="relative">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScjrkZQ3RaojYiCUN5m5LSDrprD9motavd8TiyM3_jgDUrpQg/viewform?usp=pp_url"
-                        class="relative transition-all before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:transform before:scale-0 lg:hover:before:scale-100 before:transition hover:before:transition hover:before:duration-300 before:bg-primary duration-300 hover:text-primary block md:flex py-3">Inscription</a>
-                </li>
-                <li class="relative">
-                    <a href="{{route('pages.actu')}}"
+                    <a href="actualite.php"
                         class="relative transition-all before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:transform before:scale-0 lg:hover:before:scale-100 before:transition hover:before:transition hover:before:duration-300 before:bg-primary duration-300 hover:text-primary block md:flex py-3">Actualités</a>
                 </li>
                 <li class="relative">
-                    <a href="{{route('pages.galery')}}"
-                        class="relative transition-all before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:transform before:scale-0 lg:hover:before:scale-100 before:transition hover:before:transition hover:before:duration-300 before:bg-primary duration-300 hover:text-primary block md:flex py-3">Gallerie</a>
+                    <a href="galerie.php"
+                        class="relative transition-all before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:transform before:scale-0 lg:hover:before:scale-100 before:transition hover:before:transition hover:before:duration-300 before:bg-primary duration-300 hover:text-primary block md:flex py-3">Galerie</a>
                 </li>
                 <li class="relative">
-                    <a href="{{route('pages.contact')}}"
+                    <a href="contact.php"
                         class="block w-full text-center px-5 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold lg:px-3 xl:px-5">Nous
                         contacter</a>
                 </li>
@@ -109,7 +98,7 @@
         @yield('content')
     
      <!-- ======= Footer ======= -->
- <!-- gap-2 grid md:grid-cols-2 lg:grid-cols-3 overflow-x-hidden -->
+<!-- gap-2 grid md:grid-cols-2 lg:grid-cols-3 overflow-x-hidden -->
 <footer
         class="py-10 w-full overflow-hidden bg-[#211f36] opacity-0 scale-x-50 scale-y-50 item-blog transition duration-300">
         <div class="container px-3 xsm:px-4 md:px-6 lg:px-10 2xl:px-12">
@@ -259,20 +248,11 @@
         </div>
         
     </footer>
-</body>
-@if(env('APP_ENV') === 'local')
-        <script src="{{ asset('app/js/jquery.js') }}"></script>
-    @else
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-            crossorigin="anonymous"
-        ></script>
-    @endif
+
     <!--Start of Tawk.to Script-->
-    <script src="{{ asset('app/js/hamburger.js') }}"></script>
-    <script src="{{asset('assets/js/main.js')}}"></script>
-    <script src="{{asset('assets/js/swiper-bundle.min.js')}}"></script>
+
+
+
 
 <!-- <div></div> -->
 <script type="text/javascript">
@@ -287,6 +267,8 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
@@ -312,41 +294,7 @@ s0.parentNode.insertBefore(s1,s0);
         loop: true,
     });
 </script>
-<script>
-        var swiper = new Swiper(".mySwiper", {
-            loop: true,
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesProgress: true,
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            loop: true,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            thumbs: {
-                swiper: swiper,
-            },
-        });
-    </script>
-
-
-
-    <!-- <div></div> -->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/61fa6f5eb9e4e21181bd180c/1fqt462tt';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-    
 </body>
+
 </html>
+

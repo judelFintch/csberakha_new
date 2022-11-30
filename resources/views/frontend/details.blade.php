@@ -1,7 +1,5 @@
 @extends('layout.app')
 @section('content')
-  
-
     <section class="h-auto py-7 z-10 flex items-center w-full">
         <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto">
             <div class="">

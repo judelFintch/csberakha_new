@@ -14,8 +14,5 @@
             </div>
         </div>
     </section>
-
     <!-- gap-2 grid md:grid-cols-2 lg:grid-cols-3 overflow-x-hidden -->
-
-   
 @endsection
