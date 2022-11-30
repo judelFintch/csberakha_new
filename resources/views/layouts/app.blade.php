@@ -111,8 +111,8 @@
                 </li>
 
                 <li class="relative">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScjrkZQ3RaojYiCUN5m5LSDrprD9motavd8TiyM3_jgDUrpQg/viewform?usp=pp_url"
-                        class="relative transition-all before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:transform before:scale-0 lg:hover:before:scale-100 before:transition hover:before:transition hover:before:duration-300 before:bg-primary duration-300 hover:text-primary block md:flex py-3">Inscription</a>
+                    <a href="https://web48.lws-hosting.com:2096/"
+                        class="relative transition-all before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:transform before:scale-0 lg:hover:before:scale-100 before:transition hover:before:transition hover:before:duration-300 before:bg-primary duration-300 hover:text-primary block md:flex py-3">Webmail</a>
                 </li>
                 <li class="relative">
                     <a href="{{route('pages.actu')}}"
