@@ -270,7 +270,7 @@
                             <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
                         </svg>
                     </div>
-                    <div class="w-full text-center text-gray-300">+ 465 Eleves</div>
+                    <div class="w-full text-center text-gray-300">+ 865 Eleves</div>
                 </div>
                 <div class="col-span-1 flex justify-center flex-wrap">
                     <div class="text-gray-200 mb-3">
@@ -290,7 +290,7 @@
                             <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z" />
                         </svg>
                     </div>
-                    <div class="w-full text-center text-gray-300"> + 70 Distinctions</div>
+                    <div class="w-full text-center text-gray-300"> + 180 Distinctions</div>
                 </div>
                 <div class="col-span-1 flex justify-center flex-wrap">
                     <div class="text-gray-200 mb-3">
@@ -299,7 +299,7 @@
                             <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z" />
                         </svg>
                     </div>
-                    <div class="w-full text-center text-gray-300">+ 300 Satisfations</div>
+                    <div class="w-full text-center text-gray-300">+ 600 Satisfations</div>
                 </div>
 
             </div>
@@ -370,7 +370,7 @@
                     </div>
                 </div>
                 <div class="w-full rounded-b-sm md:w-1/2 lg:w-1/5 bg-gray-200 md:rounded-r-sm md:rounded-l-full pb-5 px-2 md:p-2 lg:p-0 xl:p-5  flex justify-center md:items-center">
-                    <a href="https://csberakah.com/" class="py-3 px-3 rounded-2xl md:rounded-3xl bg-primary text-gray-50">Cliquez-ici</a>
+                    <a href="https://e-school.csberakah.org/" class="py-3 px-3 rounded-2xl md:rounded-3xl bg-primary text-gray-50">Cliquez-ici</a>
                 </div>
             </div>
         </div>
