@@ -43,7 +43,7 @@
             </div>
             <div class="col-span-1 fromRight transition duration-1000 -translate-x-full">
                 <div class="">
-                    <img src="assets/images/berakahImg/3.jpg" class="rounded-lg max-h-72 object-cover w-full" alt="Eleves dans la salle de pratique">
+                    <img src="assets/images/berakahImg/2.jpg" class="rounded-lg max-h-72 object-cover w-full" alt="Eleves dans la salle de pratique">
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@
                 </div>
 
                 <div class="col-span-1 fromRight transition duration-1000  -translate-x-full">
-                    <img src="assets/images/berakahImg/2.jpg" class="max-auto w-full object-cover" alt="La joie d'etudier">
+                    <img src="assets/images/berakahImg/31.jpg" class="max-auto w-full object-cover" alt="La joie d'etudier">
                 </div>
 
             </div>
@@ -193,13 +193,13 @@
                                     <div class="flex w-full flex-col relative px-12 py-16 h-full justify-between">
                                         <div class="flex items-center justify-between">
                                             <div class="flex flex-col mb-4">
-                                                <span class="font-bold text-xl text-white mb-2">Un terrain de basket</span>
+                                                <span class="font-bold text-xl text-white mb-2">Complexe Scolaire Berakha</span>
                                             </div>
 
                                         </div>
                                         <div class="flex text-gray-100 flex-col space-y-2 mb-4">
-                                            <span class="text-justify sm:text-left">Un terrain de basket à  la disposition des enfants pour le sport.</span>
-                                            <span class="font-semibold text-white">Yes, We have it</span>
+                                            <span class="text-justify sm:text-left">Une école d'excellence pour l'étude et la formation de votre enfant. </span>
+                                            <span class="font-semibold text-white"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -207,7 +207,7 @@
 
                             </div>
                             <div class="group-hover:scale-x-0 top-0 left-0 z-[350] absolute w-full h-full transition duration-300">
-                                <img src="assets/images/berakahImg/3.jpg" class="w-full h-full rounded-lg object-center object-cover" alt="Eleve sur Terrain ">
+                                <img src="assets/images/berakahImg/31.jpg" class="w-full h-full rounded-lg object-center object-cover" alt="Eleve sur Terrain ">
                             </div>
                         </div>
                     </div>
@@ -225,8 +225,8 @@
 
                                         </div>
                                         <div class="flex text-gray-100 flex-col space-y-2 mb-4">
-                                            <span class="text-justify sm:text-left">Nous disponibilisons de bus pour faliciter le moyens de transport à nos élèves.</span>
-                                            <span class="font-semibold text-white">Yes, We have it</span>
+                                            <span class="text-justify sm:text-left">a qualité, les meilleurs enseignants, les programmes scolaires conçues sur-mesure.</span>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -234,7 +234,7 @@
 
                             </div>
                             <div class="group-hover:scale-x-0 top-0 left-0 z-[350] absolute w-full h-full transition duration-300">
-                                <img src="assets/images/berakahImg/12.jpg" class="w-full h-full rounded-lg object-center object-cover" alt="Eleve vers bus ">
+                                <img src="assets/images/berakahImg/10.jpg" class="w-full h-full rounded-lg object-center object-cover" alt="Eleve vers bus ">
                             </div>
                         </div>
                     </div>

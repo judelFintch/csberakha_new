@@ -123,7 +123,7 @@
                         class="relative transition-all before:w-full before:absolute before:bottom-0 before:left-0 before:h-0.5 before:transform before:scale-0 lg:hover:before:scale-100 before:transition hover:before:transition hover:before:duration-300 before:bg-primary duration-300 hover:text-primary block md:flex py-3">Gallerie</a>
                 </li>
                 <li class="relative">
-                    <a href="{{route('pages.contact')}}"
+                    <a href="{{route('pages.under')}}"
                         class="block w-full text-center px-5 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold lg:px-3 xl:px-5">Nous
                         contacter</a>
                 </li>
