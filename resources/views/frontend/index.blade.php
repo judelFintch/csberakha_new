@@ -7,7 +7,7 @@
         <div class="h-full w-full flex items-center max-w-screen-xl">
             <div class="w-full flex flex-wrap flex-row justify-center space-y-5 lg:space-y-7 z-50">
                 <h1 class="text-white text-3xl md:text-4xl lg:text-5xl lg:leading-snug text-center font-bold">
-                    Bienvenue au Complexe Scolaire Berakah(Travaux encours sur le site).</h1>
+                    Bienvenue au Complexe Scolaire Berakah.</h1>
                 <p class="text-center block text-white text-lg">
                     Une école d'excellence pour
                     l'étude et la formation de votre enfant. La qualité, les meilleurs enseignants, les programmes
@@ -43,7 +43,7 @@
             </div>
             <div class="col-span-1 fromRight transition duration-1000 -translate-x-full">
                 <div class="">
-                    <img src="assets/images/berakahImg/2.jpg" class="rounded-lg max-h-72 object-cover w-full" alt="Eleves dans la salle de pratique">
+                    <img src="assets/images/berakahImg/3.jpg" class="rounded-lg max-h-72 object-cover w-full" alt="Eleves dans la salle de pratique">
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@
                 </div>
 
                 <div class="col-span-1 fromRight transition duration-1000  -translate-x-full">
-                    <img src="assets/images/happy_studies.png" class="max-auto w-full object-cover" alt="La joie d'etudier">
+                    <img src="assets/images/berakahImg/2.jpg" class="max-auto w-full object-cover" alt="La joie d'etudier">
                 </div>
 
             </div>
@@ -234,7 +234,7 @@
 
                             </div>
                             <div class="group-hover:scale-x-0 top-0 left-0 z-[350] absolute w-full h-full transition duration-300">
-                                <img src="assets/images/berakahImg/4.jpg" class="w-full h-full rounded-lg object-center object-cover" alt="Eleve vers bus ">
+                                <img src="assets/images/berakahImg/12.jpg" class="w-full h-full rounded-lg object-center object-cover" alt="Eleve vers bus ">
                             </div>
                         </div>
                     </div>
