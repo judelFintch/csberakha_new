@@ -13,7 +13,7 @@
                     l'étude et la formation de votre enfant. La qualité, les meilleurs enseignants, les programmes
                     scolaires conçues sur-mesure, des salles de classes avec de fournitures modernes.
                 </p>
-                <a href="about.php" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Savoir
+                <a href="{{route('pages.about')}}" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Savoir
                     plus</a>
             </div>
         </div>
@@ -37,7 +37,7 @@
                     </p>
                 </div>
                 <div class="block">
-                    <a href="about.php" class="block px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Plus
+                    <a href="{{route('pages.about')}}" class="block px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Plus
                         sur nous</a>
                 </div>
             </div>
@@ -166,7 +166,7 @@
                         </div>
                     </div>
                     <div class="flex">
-                        <a href="options.php" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-normal">Toutes
+                        <a href="{{route('pages.options')}}" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-normal">Toutes
                             les options</a>
                     </div>
                 </div>
@@ -279,7 +279,7 @@
                             <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
                         </svg>
                     </div>
-                    <div class="w-full text-center text-gray-300">Un corp professoral experimenté</div>
+                    <div class="w-full text-center text-gray-300">+ 60 Enseignants</div>
                 </div>
 
                 <div class="col-span-1 flex justify-center flex-wrap">

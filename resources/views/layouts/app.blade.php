@@ -232,7 +232,7 @@
                                         class="text-gray-100 font-medium text-lg transition duration-300 hover:text-gray-200">Actualités</a>
                                 </li>
                                 <li class="px-3 py-2">
-                                    <a href="galerie.html"
+                                    <a href="{{route('pages.galery')}}"
                                         class="text-gray-100 font-medium text-lg transition duration-300 hover:text-gray-200">Galerie</a>
                                 </li>
                             </ul>
