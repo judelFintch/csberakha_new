@@ -306,7 +306,7 @@
         </div>
     </div>
 </section>
-
+<!--
 <section class="py-7 w-full relative">
     <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto">
         <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Actualités <span class="text-primary">Recentes</span></h1>
@@ -357,6 +357,7 @@
         </div>
     </div>
 </section>
+-->
 <section class="py-7 w-full relative bg-white">
     <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto">
         <div class="w-full rounded-lg opacity-0 scale-x-50 scale-y-50 item-blog transition duration-300 overflow-hidden">
