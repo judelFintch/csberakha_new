@@ -11,7 +11,7 @@
                     Bienvenue au Complexe Scolaire Berakah</h1>
                 <p class="text-center block text-white text-lg">
                     Cs berakha est une école  privée  d'excellence à lubumbashi qui  qui offre un apprentissage riche et divertissant fondé sur le développement de communautés solides. De manière interactive et unique, les élèves apprennent à penser de façon analytique, à communiquer avec le monde et à naviguer dans une époque numérique en constante évolution.
-                    Avec nos professeurs expérimentés, et nos environnements d'apprentissage stimulants, nous offrons aux étudiants une éducation et des compétences essentiels qui leur permettront de réussir dans le monde de demain. Venez nous rejoindre et devenez le meilleur de vous-même. Rejoignez notre école et commencez votre avenir aujourd'hui !
+                     !
                 </p>
                 <a href="{{route('pages.about')}}" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Savoir
                     plus</a>
@@ -332,7 +332,7 @@
         </div>
     </div>
 </section>
--->
+
 <section class="py-7 w-full relative bg-white">
     <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto">
         <div class="w-full rounded-lg opacity-0 scale-x-50 scale-y-50 item-blog transition duration-300 overflow-hidden">
