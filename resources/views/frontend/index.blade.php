@@ -23,6 +23,29 @@
 
 
 
+
+
+<section class="relative py-7 bg-white">
+    <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto overflow-x-hidden">
+       
+        <div class="grid w-full gap-3 md:gap-4 grid-cols-1 md:grid-cols-2">
+            <div class="flex flex-wrap flex-row col-span-1">
+               
+                <div class="block">
+                    <p class="text-justify mb-4 text-base font-normal  text-gray ">
+                      
+                    </p>
+               
+            </div>
+            <div class="col-span-1 fromRight transition duration-1000 -translate-x-full">
+                <div class="">
+                    <img src="assets/images/berakahImg/2.jpg" class="rounded-lg max-h-72 object-cover w-full" alt="Eleves dans la salle de pratique">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="relative py-7 bg-white">
     <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto overflow-x-hidden">
         <h1 class="text-2xl font-semibold text-gray-800 mb-6">Historique<span class="text-primary">Nous</span>
@@ -314,7 +337,7 @@
        @foreach($articles as $article)
             <div class="col-span-1 opacity-0 scale-x-50 scale-y-50 item-blog flex flex-row flex-wrap group transition duration-700 bg-white rounded-md shadow-md p-4">
                 <div class="relative w-full overflow-hidden h-60 max-h-60 sm:h-40 sm:max-h-40 2xl:h-60 2xl:max-h-72 rounded-md mb-3">
-                    <img src="{{ asset('storage/'. $articles->images) }}" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">
+                    <img src="{{ asset('storage/'. $articles->picture) }}" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">
                     <div class="absolute bottom-0 left-0 px-5 py-2 bg-gray-900 bg-opacity-70 text-gray-800 rounded-bl-md">
                         <span class="text-gray-50">12-12-2021</span>
                     </div>
