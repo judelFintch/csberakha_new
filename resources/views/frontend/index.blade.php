@@ -10,9 +10,8 @@
                 <h1 class="text-white text-3xl md:text-4xl lg:text-5xl lg:leading-snug text-center font-bold">
                     Bienvenue au Complexe Scolaire Berakah</h1>
                 <p class="text-center block text-white text-lg">
-                    Une école  d'excellence à lubumbashi pour
-                    l'étude et la formation de vos enfants. La qualité, les meilleurs enseignants, les programmes
-                    scolaires conçues sur-mesure, des salles de classes avec de fournitures modernes.
+                    Cs berakha est une école  privée  d'excellence à lubumbashi qui  qui offre un apprentissage riche et divertissant fondé sur le développement de communautés solides. De manière interactive et unique, les élèves apprennent à penser de façon analytique, à communiquer avec le monde et à naviguer dans une époque numérique en constante évolution.
+                    Avec nos professeurs expérimentés, et nos environnements d'apprentissage stimulants, nous offrons aux étudiants une éducation et des compétences essentiels qui leur permettront de réussir dans le monde de demain. Venez nous rejoindre et devenez le meilleur de vous-même. Rejoignez notre école et commencez votre avenir aujourd'hui !
                 </p>
                 <a href="{{route('pages.about')}}" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Savoir
                     plus</a>
@@ -21,9 +20,12 @@
     </div>
 </section>
 
+
+
+
 <section class="relative py-7 bg-white">
     <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto overflow-x-hidden">
-        <h1 class="text-2xl font-semibold text-gray-800 mb-6">A Propos De <span class="text-primary">Nous</span>
+        <h1 class="text-2xl font-semibold text-gray-800 mb-6">Historique<span class="text-primary">Nous</span>
         </h1>
         <div class="grid w-full gap-3 md:gap-4 grid-cols-1 md:grid-cols-2">
             <div class="flex flex-wrap flex-row col-span-1">
@@ -61,8 +63,7 @@
                     <div class="flex flex-row flex-wrap justify-center space-y-3">
                         <h1 class="font-medium text-lg w-full text-center text-gray-800">Maternelle</h1>
                         <p class="text-sm font-normal text-gray-700 text-center">
-                            Nous offrons à chaque enfant une première expérience scolaire réussie à travers une
-                            pédagogie spécifique.
+                        La maternelle est une étape importante dans l'éducation des enfants. Elle prépare les jeunes élèves à l'apprentissage de la lecture, de l'écriture et des chiffres tout en développant leur socialisation et leur confiance en eux. Les enseignants qualifiés et expérimentés travaillent avec les enfants pour les aider à atteindre leur plein potentiel dans un environnement de jeu et d'apprentissage ludique. Les activités éducatives variées, comme la danse, les arts plastiques, la musique et les sports, aident à stimuler la curiosité et l'imagination des enfants, tout en renforçant leur coordination et leur motricité.
                         </p>
                     </div>
                 </div>
@@ -73,8 +74,7 @@
                     <div class="flex flex-row flex-wrap justify-center space-y-3">
                         <h1 class="font-medium text-lg w-full text-center text-gray-800">Primaire</h1>
                         <p class="text-sm font-normal text-gray-700 text-center">
-                            Notre école facilite l'apprentissage de la lecture, de l'écriture et des bases de
-                            mathématiques aux enfants.
+                        Au cours de cette étape, les enfants développent leurs compétences de base en lecture, écriture et mathématiques, en étudiant des sujets tels que la grammaire, la littérature et les sciences. Les enfants apprennent également l'histoire, la géographie et les sciences sociales, qui les aident à comprendre le monde qui les entoure. Les enseignants travaillent également pour renforcer les compétences sociales et émotionnelles des enfants, en les aidant à développer leur capacité à travailler en équipe et à communiquer efficacement.
                         </p>
                     </div>
                 </div>
@@ -85,8 +85,7 @@
                     <div class="flex flex-row flex-wrap justify-center space-y-3">
                         <h1 class="font-medium text-lg w-full text-center text-gray-800">Secondaire</h1>
                         <p class="text-sm font-normal text-gray-700 text-center">
-                            Nous preperons les enfants à la réalité de la vie, à aquerir de bonnes bases pour etre
-                            utile à la communauté et à eux-mêmes, et aussi preparer à la vie estudiantine.
+                        Au cours de cette étape, les éléves développent leur capacité à raisonner de manière critique et à comprendre les concepts complexes. Ils étudient des matières plus avancées telles que les mathématiques, les sciences, les langues, l'histoire et les sciences sociales. Les étudiants peuvent également choisir des options d'études spécialisées pour poursuivre leurs intérêts particuliers.En plus des études académiques, les étudiants ont également la possibilité de participer à des activités extracurriculaires telles que des sports, des clubs, des débats, des comités, des théâtre, et bien plus encore, qui les aident à développer leur confiance en eux et à découvrir leurs passions.
                         </p>
                     </div>
                 </div>
@@ -102,9 +101,7 @@
             <div class="grid md:grid-cols-2 gap-5">
                 <div class="col-span-1 block flex-wrap space-y-4 text-justify fromLeft transition duration-1000 translate-x-full">
                     <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Options <span class="text-primary">organisées</span></h1>
-                    <p class="text-justify text-lg font-medium text-gray-800">Pour un bon encadrement et la réussite
-                        de la formation des enfants, notre Ecole organise differentes options. Nous visons
-                        l'excellence dans chaque option. Nos options sont les suivantes </p>
+                    <p class="text-justify text-lg font-medium text-gray-800">Une bonne formation est un investissement essentiel pour réussir dans la vie. Elle permet aux individus de développer les compétences et les connaissances nécessaires pour réussir dans leur carrière et dans leur vie personnelle, c'est pour cette raison que CS BERAKHA  met tout en œuvre enfin à organiser plusieurs options </p>
                     <div class="block">
                         <div class="w-full block mb-2 pl-5">
                             <div class="flex items-center space-x-3">
@@ -307,54 +304,31 @@
         </div>
     </div>
 </section>
-<!--
+
 <section class="py-7 w-full relative">
     <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto">
         <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Actualités <span class="text-primary">Recentes</span></h1>
 
         <div class="grid gap-6 md:grid-cols-3 md:gap-8">
+
+       @foreach($articles as $article)
             <div class="col-span-1 opacity-0 scale-x-50 scale-y-50 item-blog flex flex-row flex-wrap group transition duration-700 bg-white rounded-md shadow-md p-4">
                 <div class="relative w-full overflow-hidden h-60 max-h-60 sm:h-40 sm:max-h-40 2xl:h-60 2xl:max-h-72 rounded-md mb-3">
-                    <img src="assets/images/berakahImg/berakah_bus.jpg" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">
+                    <img src="{{ asset('storage/'. $articles->images) }}" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">
                     <div class="absolute bottom-0 left-0 px-5 py-2 bg-gray-900 bg-opacity-70 text-gray-800 rounded-bl-md">
                         <span class="text-gray-50">12-12-2021</span>
                     </div>
                 </div>
                 <h1 class="font-medium text-lg w-full text-gray-800 mb-3 line-clamp-1 group-hover:cursor-default">
-                    Travaux encours</h1>
+                    {{$article->title}}</h1>
                 <p class="line-clamp-3 text-base font-normal text-justify text-gray-500 mb-3 group-hover:cursor-default">
 
                 </p>
 
             </div>
-            <div class="col-span-1 opacity-0 scale-x-50 scale-y-50 item-blog flex flex-row flex-wrap group transition duration-700 bg-white rounded-md shadow-md p-4">
-                <div class="relative w-full overflow-hidden h-60 max-h-60 sm:h-40 sm:max-h-40 2xl:h-60 2xl:max-h-72 rounded-md mb-3">
-                    <img src="assets/images/berakahImg/cours_cs_berakah.JPG" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">
-                    <div class="absolute bottom-0 left-0 px-5 py-2 bg-gray-900 bg-opacity-70 text-gray-800 rounded-bl-md">
-                        <span class="text-gray-50">12-12-2021</span>
-                    </div>
-                </div>
-                <h1 class="font-medium text-lg w-full text-gray-800 mb-3 line-clamp-1 group-hover:cursor-default">
-                    Travaux en cours</h1>
-                <p class="line-clamp-3 text-base font-normal text-justify text-gray-500 mb-3 group-hover:cursor-default">
-
-                </p>
-
-            </div>
-            <div class="col-span-1 opacity-0 scale-x-50 scale-y-50 item-blog flex flex-row flex-wrap group transition duration-700 bg-white rounded-md shadow-md p-4">
-                <div class="relative w-full overflow-hidden h-60 max-h-60 sm:h-40 sm:max-h-40 2xl:h-60 2xl:max-h-72 rounded-md mb-3">
-                    <img src="assets/images/berakahImg/cours_berakah.jpg" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">
-                    <div class="absolute bottom-0 left-0 px-5 py-2 bg-gray-900 bg-opacity-70 text-gray-800 rounded-bl-md">
-                        <span class="text-gray-50">12-12-2021</span>
-                    </div>
-                </div>
-                <h1 class="font-medium text-lg w-full text-gray-800 mb-3 line-clamp-1 group-hover:cursor-default">
-                    Travaux en cours</h1>
-                <p class="line-clamp-3 text-base font-normal text-justify text-gray-500 mb-3 group-hover:cursor-default">
-
-                </p>
-
-            </div>
+            @endforeach
+          
+           
         </div>
     </div>
 </section>

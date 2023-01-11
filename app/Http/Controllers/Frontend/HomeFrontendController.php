@@ -21,6 +21,7 @@ class HomeFrontendController extends Controller
 
     public function index(): Factory|View|Application
     {
+        
         return view('frontend.index', [
             'articles' => $this->repository->getAllVerified(),
             'valves' => $this->valveRepository->getAllVerified(),
