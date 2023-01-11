@@ -21,31 +21,6 @@
 </section>
 
 
-
-
-
-
-<section class="relative py-7 bg-white">
-    <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto overflow-x-hidden">
-       
-        <div class="grid w-full gap-3 md:gap-4 grid-cols-1 md:grid-cols-2">
-            <div class="flex flex-wrap flex-row col-span-1">
-               
-                <div class="block">
-                    <p class="text-justify mb-4 text-base font-normal  text-gray ">
-                      
-                    </p>
-               
-            </div>
-            <div class="col-span-1 fromRight transition duration-1000 -translate-x-full">
-                <div class="">
-                    <img src="assets/images/berakahImg/2.jpg" class="rounded-lg max-h-72 object-cover w-full" alt="Eleves dans la salle de pratique">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="relative py-7 bg-white">
     <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto overflow-x-hidden">
         <h1 class="text-2xl font-semibold text-gray-800 mb-6">Historique<span class="text-primary">Nous</span>
