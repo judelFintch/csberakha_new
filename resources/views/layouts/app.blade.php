@@ -8,8 +8,8 @@
     <meta name="keywords" content="lubumbashi,complexe,scolaire,cs, berakha, ecole">
     <meta name="author" content="Judel Fintch, Jhonny Kat">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/swiper-bundle.min.css')}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">

@@ -31,7 +31,7 @@ class HomeFrontendController extends Controller
 
     public function show(string $key): Factory|View|Application
     {
-        return view('frontend.articles.show', [
+        return view('frontend.show', [
             'article' => $this->repository->getOneByKey($key),
             'valves' => $this->valveRepository->getAllVerified()
         ]);
