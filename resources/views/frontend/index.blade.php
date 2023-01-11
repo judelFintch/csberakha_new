@@ -337,9 +337,9 @@
        @foreach($articles as $article)
             <div class="col-span-1 opacity-0 scale-x-50 scale-y-50 item-blog flex flex-row flex-wrap group transition duration-700 bg-white rounded-md shadow-md p-4">
                 <div class="relative w-full overflow-hidden h-60 max-h-60 sm:h-40 sm:max-h-40 2xl:h-60 2xl:max-h-72 rounded-md mb-3">
-                    <img src="{{ asset('storage/'. $articles->picture) }}" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">
+                    <img src="{{ asset('storage/'. $article->picture) }}" class="h-full object-cover w-full transition-all duration-300 group-hover:transform group-hover:scale-110 rounded-md" alt="Image d'illustration">
                     <div class="absolute bottom-0 left-0 px-5 py-2 bg-gray-900 bg-opacity-70 text-gray-800 rounded-bl-md">
-                        <span class="text-gray-50">12-12-2021</span>
+                        <span class="text-gray-50">{{ $article->created_at->format('Y-m-d') }}</span>
                     </div>
                 </div>
                 <h1 class="font-medium text-lg w-full text-gray-800 mb-3 line-clamp-1 group-hover:cursor-default">
