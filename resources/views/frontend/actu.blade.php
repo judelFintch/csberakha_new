@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'CS Berakha: Nos actualités')
 @section('content')
     <section
         class="relative h-40 z-10 bg-cover bg-no-repeat bg-right-bottom sm:bg-left-top md:bg-center flex items-center before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-gray-800 before:opacity-70 before:z-10"

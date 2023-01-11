@@ -32,14 +32,14 @@ Route::group(['middleware' => 'auth'], function (){
 
 
 Route::get('/', [HomeFrontendController::class, 'index'])->name('home.index');
-route::get('/nos-article/{key}', [HomeFrontendController::class, 'show'])->name('article.voirplus');
-Route::get('/all_articles', [HomeFrontendController::class, 'all_articles'])->name('article.all');
-Route::get('/about_us', [HomeFrontendController::class, 'about'])->name('pages.about');
-Route::get('/admission', [HomeFrontendController::class, 'admission'])->name('pages.admission');
-Route::get('/innovations', [HomeFrontendController::class, 'innovations'])->name('pages.inovations');
-Route::get('/options', [HomeFrontendController::class, 'options'])->name('pages.options');
-Route::get('/actualites', [HomeFrontendController::class, 'actu'])->name('pages.actu');
-Route::get('/galery', [HomeFrontendController::class, 'gallery'])->name('pages.galery');
+route::get('/nos-article-cs-berakha/{key}', [HomeFrontendController::class, 'show'])->name('article.voirplus');
+Route::get('/all_articles_cs_berkha', [HomeFrontendController::class, 'all_articles'])->name('article.all');
+Route::get('/apropos_ud_cs_berakha', [HomeFrontendController::class, 'about'])->name('pages.about');
+Route::get('/admission_au_cs_berakha', [HomeFrontendController::class, 'admission'])->name('pages.admission');
+Route::get('/innovations_au_cs_berakha', [HomeFrontendController::class, 'innovations'])->name('pages.inovations');
+Route::get('/options_du_cs_berakha', [HomeFrontendController::class, 'options'])->name('pages.options');
+Route::get('/actualites_du_cs_berakha', [HomeFrontendController::class, 'actu'])->name('pages.actu');
+Route::get('/galery_du_cs_berakha', [HomeFrontendController::class, 'gallery'])->name('pages.galery');
 Route::get('/under_construct', [HomeFrontendController::class, 'underContstruct'])->name('pages.under');
-Route::get('/contact_us', [HomeFrontendController::class, 'contact'])->name('pages.contact');
+Route::get('/contacter_le_cs_berakha', [HomeFrontendController::class, 'contact'])->name('pages.contact');
 Route::get('/details/{id}', [MainController::class, 'detail'])->name('pages.detail');

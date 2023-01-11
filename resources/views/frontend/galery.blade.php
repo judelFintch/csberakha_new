@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'CS Berakha: Notre Gallerie')
 @section('content')
     <section class="relative py-7">
         <div class="xl:max-w-screen-xl 2xl:max-w-screen-2xl px-4 md:w-4/5 mx-auto">

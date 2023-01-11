@@ -1,5 +1,6 @@
 
 @extends('layouts.app')
+@section('title', 'CS Berakha: Acceuil')
 
 @section('content')
 <section class="relative bg-no-repeat bg-center bg-cover h-[75vh] lg:h-[80vh] 2xl:h-[60vh] before:absolute before:w-full before:h-full before:top-0 before:left-0 before:bg-opacity-70 before:bg-gray-800 before:z-20" style="background-image: url('https://csberakah.org/assets/images/berakahImg/1.jpg');">
@@ -7,10 +8,10 @@
         <div class="h-full w-full flex items-center max-w-screen-xl">
             <div class="w-full flex flex-wrap flex-row justify-center space-y-5 lg:space-y-7 z-50">
                 <h1 class="text-white text-3xl md:text-4xl lg:text-5xl lg:leading-snug text-center font-bold">
-                    Bienvenue au Complexe Scolaire Berakah.</h1>
+                    Bienvenue au Complexe Scolaire Berakah</h1>
                 <p class="text-center block text-white text-lg">
-                    Une école d'excellence pour
-                    l'étude et la formation de votre enfant. La qualité, les meilleurs enseignants, les programmes
+                    Une école  d'excellence à lubumbashi pour
+                    l'étude et la formation de vos enfants. La qualité, les meilleurs enseignants, les programmes
                     scolaires conçues sur-mesure, des salles de classes avec de fournitures modernes.
                 </p>
                 <a href="{{route('pages.about')}}" class="px-4 py-3 md:text-md text-sm bg-primary hover:bg-green-500 focus:bg-blue-500 transition duration-300 text-white rounded-md font-semibold">Savoir
@@ -26,7 +27,7 @@
         </h1>
         <div class="grid w-full gap-3 md:gap-4 grid-cols-1 md:grid-cols-2">
             <div class="flex flex-wrap flex-row col-span-1">
-                <h2 class="text-lg mb-4 font-bold text-gray-1200 ">Complexe Scolaire <span class="text-primary">BERAKAH</span></h2>
+                <h2 class="text-lg mb-4 font-bold text-gray-1200 ">Complexe Scolaire <span class="text-primary">BERAKAH </span></h2>
                 <div class="block">
                     <p class="text-justify mb-4 text-base font-normal  text-gray ">
                         En suivant les empreintes de nos visionnaires Félicien Tshibangu YAMBA et
