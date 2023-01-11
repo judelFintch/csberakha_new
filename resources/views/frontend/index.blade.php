@@ -341,7 +341,7 @@
                     <div class="block p-5">
                         <h1 class="font-bold text-2xl md:text-3xl text-gray-50 mb-3">Étudiez en ligne sur notre plate-forme</h1>
                         <p class="w-full block text-gray-300">
-                            Nous disposons d'une plate-forme d'étude en ligne pour assurer un enseignement d'à domicile et à distance
+                        Notre plateforme vous offre les moyens de planifier vos études et de suivre votre progrès. Vous aurez accès à des vidéos éducatives pertinentes , des articles et des leçons pour tous les niveaux. Vous pourrez également profiter d'outils innovants tels que les cartes mentales et les quiz pour vous aider à comprendre et à mémoriser le matériel
                         </p>
                     </div>
                 </div>
